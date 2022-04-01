@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+        #wrapper{
+        
+        width: 20%;
+        margin: 0 auto;
+    }
+        body{
+            background: #7CB9E8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complex Password Generator</h1>
+    <div id="wrapper">
+    <form action="">
+       Password Length <input type="text" id="passLength"><br>
+       <input type="checkbox" id="digit" checked> Use Digit <br>
+       <input type="checkbox" id="lower" checked> Use lower case letters <br>
+       <input type="checkbox" id="upper" checked> Use upper case letters <br>
+       <input type="checkbox" id="special" checked> Use special characters <br>
+       Do not use these characters <input type="text" id="removeSpecial"><br>
+       <input type="button" value="Generate Password" style="color: #fff" onclick="genPass();">
+
+    </form>
+    <div id="output"></div>
+    <div id="output2"></div>
+    
+</div>
+   
+    
+<script src="app.js"></script>
+</body>
+</html>
